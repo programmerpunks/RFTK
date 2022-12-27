@@ -1,13 +1,20 @@
-import React from 'react';
+import React from "react";
 
-import './App.css';
+import Features from "./components/features";
+import Landing from "./components/landing";
+import MintChecker from "./components/mintChecker";
+import Navbar from "./components/navbar";
+
+import "./App.css";
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-    RFTKT
-  </h1>
-
+    <div className="bg-black">
+      <Navbar />
+      <Landing />
+      <MintChecker />
+      <Features />
+    </div>
   );
 }
 
