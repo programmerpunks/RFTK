@@ -20,3 +20,8 @@
     background-color: #272932;
     box-shadow: 0 1rem 3rem #0000002d;
 }
+
+
+.winnerItembg{
+    background: linear-gradient(90deg,rgb(102,88,53) 0%,rgb(39,41,50) 100%);
+}
