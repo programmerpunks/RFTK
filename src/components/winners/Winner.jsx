@@ -15,7 +15,7 @@ const Winner = () => {
         </button>
       </div>
       <div className="md:w-64 my-10 flex justify-center ">
-        <img className="w-[60%] hover:scale-105 " src={creator1} alt="" />
+        <img className="w-[60%] hover:scale-110 duration-1000 " src={creator1} alt="" />
       </div>
       <div className="md:w-[40%]">
         <h1 className="text-xs lg:text-base font-bold text-[#FFFFFF]">
