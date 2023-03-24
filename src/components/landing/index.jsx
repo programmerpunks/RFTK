@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 
+import get_NFTs_Filtered from "./helpingFunctions/NFTSelectionFunction";
 import LandingData from "./rftDataAPI";
 import VideoCardSection from "./videoCard";
 import VideoThumbnailSection from "./videoThumbnail";
-import get_NFTs_Filtered from "./helpingFunctions/NFTSelectionFunction";
 
 const Landing = () => {
-  const [NFTCategory, setNFTCategory] = useState("RTFKT Cryptokicks iRL");
 
+  const [NFTCategory, setNFTCategory] = useState("RTFKT Cryptokicks iRL");
   let filtered_NFT = get_NFTs_Filtered(NFTCategory, LandingData);
+
   return (
     <>
       <div className="w-full items-center h-[80vh] relative overflow-hidden">

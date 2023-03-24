@@ -1,6 +1,8 @@
 import React from "react";
+
 import FeactureCartItem from "./featuresCartItem";
 import featuresData from "./featuresDataAPI";
+
 const Features = () => {
   return (
     <>

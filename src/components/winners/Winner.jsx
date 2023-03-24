@@ -1,4 +1,5 @@
 import React from "react";
+
 import creator1 from "../../images/winners/creator1.png";
 import WinnerCard from "./WinnerCard";
 import { WinnersDetails } from "./WinnersDetails";
@@ -8,7 +9,7 @@ const Winner = () => {
     <div className="bg-[#272932] mx-[10%] md:flex py-10 px-10 rounded-xl bg-grid-img">
       <div className="md:w-[40%]">
         <h1 className="text-2xl md:w-[80%] md:text-xl xl:text-2xl 2xl:text-3xl text-[#FFFFFF]">
-          Join our discord and participate in the next RTFKT creator contest.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maxime
         </h1>
         <button className="hidden border md:w-[80%] md:my-[20%] font-bold text-sm py-3 md:block text-black w-full bg-white rounded-2xl">
           DISCOVER NOW

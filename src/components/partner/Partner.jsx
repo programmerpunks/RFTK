@@ -1,7 +1,8 @@
 import React from "react";
+
+import bg_email from "../../images/partner/bg-email.png";
 import { PartnerDetails } from "./PartnerDetails";
 import SinglePartner from "./SinglePartner";
-import bg_email from "../../images/partner/bg-email.png";
 
 const Partner = () => {
   return (

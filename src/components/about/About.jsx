@@ -1,4 +1,5 @@
 import React from "react";
+
 import about from "../../images/about/about-us2.svg";
 
 const About = () => {
@@ -9,10 +10,10 @@ const About = () => {
         <img src={about} alt="" />
       </div>
       <p className="text-2xl text-slate-400">
-        We are a <span className="cd">creator</span> led organisation. RTFKT
-        uses the latest in game engines, NFT, blockchain authentication and
-        augmented reality, combined with manufacturing expertise to create one
-        of a kind sneakers and digital artifacts.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi possimus
+        dolorem similique recusandae amet? Cumque quae beatae, itaque accusamus
+        eum aut nihil maiores cupiditate quibusdam, in velit, minima ad
+        molestiae!
       </p>
     </div>
   );

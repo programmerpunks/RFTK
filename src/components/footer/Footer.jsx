@@ -1,4 +1,5 @@
 import React from "react";
+
 import FooterLinks from "./FooterLinks";
 import logotype from "../../images/footer/logotype.png";
 
@@ -9,10 +10,10 @@ const Footer = () => {
         <div className="lg:w-2/4">
           <img className="w-[40%] my-3" src={logotype} alt="" />
           <p className="text-slate-400">
-            We are a creator led organisation. RTFKT uses the latest in game
-            engines, NFT, blockchain authentication and augmented reality,
-            combined with manufacturing expertise to create one of a kind
-            sneakers and digital artifacts.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            laudantium iste eveniet nemo voluptatem ex quae animi illo magni,
+            eligendi sint explicabo quibusdam? Aliquam odit temporibus eos,
+            rerum ducimus perspiciatis.
           </p>
           <div className="my-5 lg:hidden">
             <FooterLinks />
@@ -49,10 +50,10 @@ const Footer = () => {
       </div>
       <div className="flex justify-center text-center mx-[5%]">
         <p className="text-xs font-bold text-gray-400 lg:w-[60%]">
-          RTFKT is a registered trademark of RTFKT Inc. All Rights Reserved by
-          RTFKT. All logos are registered trademarks of their respective owners.
-          All contents of this document, unless otherwise credited, are
-          copyright © 2022 RTFKT Inc.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+          pariatur, totam ex quaerat quos, quod commodi dolore odit cupiditate
+          rerum molestias facilis eum dolor amet autem exercitationem doloribus
+          quis dolorem?
         </p>
       </div>
     </div>

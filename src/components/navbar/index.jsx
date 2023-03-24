@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
-const logo = require("../../images/navbar/logo.svg").default;
 const arrowimg = require("../../images/navbar/arrow-down-white.svg").default;
+const logo = require("../../images/navbar/logo.svg").default;
+
 function DropdownItem(props) {
   return (
     <li className="dropdownItem flex justify-center text-sm text-[#FFFFFF] p-4 rounded-2xl hover:bg-[#5733F5]">
@@ -20,7 +21,7 @@ const Navbar = () => {
           <img src={logo} alt="/" />
         </div>
         <div
-          className="flex justify-end w-[90%] items-center p-5 text-white cursor-pointer"
+          className="md:flex justify-end w-[90%] items-center p-5 text-white cursor-pointer hidden "
           onMouseLeave={() => {
             setOpen(false);
           }}
