@@ -8,7 +8,7 @@ import get_NFTs_Filtered from "./helpingFunctions/NFTSelectionFunction";
 const Landing = () => {
   const [NFTCategory, setNFTCategory] = useState("RTFKT Cryptokicks iRL");
 
-  let filtered_NFT: any = get_NFTs_Filtered(NFTCategory, LandingData);
+  let filtered_NFT = get_NFTs_Filtered(NFTCategory, LandingData);
   return (
     <>
       <div className="w-full items-center h-[80vh] relative overflow-hidden">
