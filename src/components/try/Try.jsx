@@ -1,7 +1,7 @@
 import React from "react";
 
 import TryCard from "./TryCard";
-import { TryDetails } from "./TryDetails";
+import { TryDetails } from "../../content/Try";
 
 const Try = () => {
   return (

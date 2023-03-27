@@ -21,7 +21,7 @@ const Navbar = () => {
           <img src={logo} alt="/" />
         </div>
         <div
-          className="md:flex justify-end w-[90%] items-center p-5 text-white cursor-pointer hidden "
+          className="md:flex justify-end w-[90%] items-center p-5 text-white cursor-pointer hidden"
           onMouseLeave={() => {
             setOpen(false);
           }}

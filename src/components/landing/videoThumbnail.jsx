@@ -1,8 +1,6 @@
 import React from "react";
 
-const thumbnail = require("../../images/landing/landing-video-thumbnail.png")
-
-const VideoThumbnailSection = ({setNFT ,title}) => {
+const VideoThumbnailSection = ({setNFT ,thumbnail,title}) => {
   return (
     <>
       <div className="rounded-full w-[15%] cursor-pointer" onClick={()=>{setNFT(title)}}>

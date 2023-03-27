@@ -1,26 +1,24 @@
 import React from "react";
 
-const mintImg = require("../../images/mintChecker/mint_checker_img.png");
+import { mintingData } from "../../content/Mint";
 
 const MintChecker = () => {
   return (
     <>
       <div className="flex md:px-60 md:py-20 flex-col flex-wrap md:p-0 p-20 w-full overflow-hidden justify-center">
-        <div className="flex text-white w-full p-5">PRIVATE MINT CHECKER</div>
+        <div className="flex text-white w-full p-5">{mintingData.title}</div>
         <div className="flex lg:flex-nowrap flex-wrap bg-[#272733] rounded-3xl">
           <img
             className="w-full max-w-full rounded-2xl"
-            src={mintImg}
+            src={mintingData.image}
             alt="/"
           />
           <div className="flex md:py-0 py-14 px-20 flex-col md:px-20 justify-center">
             <div className="text-white text-2xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing
+              {mintingData.header}
             </div>
             <div className="text-[#A3A6B5] pt-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-              aliquam quam consequuntur suscipit dolor voluptas ipsa non impedit
-              eaque doloribus possimus debitis esse sit eius rem corrupti
+              {mintingData.description}
             </div>
             <div className="flex py-5 justify-center">
               <input

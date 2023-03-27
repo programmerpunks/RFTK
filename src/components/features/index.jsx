@@ -1,7 +1,7 @@
 import React from "react";
 
 import FeactureCartItem from "./featuresCartItem";
-import featuresData from "./featuresDataAPI";
+import featuresData from "../../content/Feature";
 
 const Features = () => {
   return (
@@ -11,6 +11,9 @@ const Features = () => {
           return (
             <FeactureCartItem
               key={feature.id}
+              heading={feature.heading}
+              logo={feature.logo}
+              quantity={feature.quatity}
               title={feature.title}
               video_link={feature.video_url}
             />

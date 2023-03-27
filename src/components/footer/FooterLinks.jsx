@@ -1,7 +1,7 @@
 import React from "react";
 
+import { FooterButtonsDetails } from "../../content/Footer/buttons";
 import FooterBtn from "./FooterBtn";
-import { FooterButtonsDetails } from "./FooterButtonsDetails";
 
 const FooterLinks = () => {
   return (

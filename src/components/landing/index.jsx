@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
 import get_NFTs_Filtered from "./helpingFunctions/NFTSelectionFunction";
-import LandingData from "./rftDataAPI";
+import LandingData from "../../content/Landing";
+import { landingSection } from "../../content/Landing";
 import VideoCardSection from "./videoCard";
 import VideoThumbnailSection from "./videoThumbnail";
 
 const Landing = () => {
-
-  const [NFTCategory, setNFTCategory] = useState("RTFKT Cryptokicks iRL");
+  const [NFTCategory, setNFTCategory] = useState(LandingData[0].title);
   let filtered_NFT = get_NFTs_Filtered(NFTCategory, LandingData);
 
   return (
@@ -24,15 +24,16 @@ const Landing = () => {
         </div>
         <div className="extraDiv"></div>
         <div className="flex justify-evenly items-center absolute w-full h-full top-0 flex-col md:flex-row">
-          <div className="flex flex-col text-white mt-[120%] md:mt-0">
-            <div className="">CRYPTOKICKS IRL </div>
-            <div className="text-4xl"> Cryptokicks iRL Mint has Ended</div>
+          <div className="flex flex-col text-white mt-[20%] md:mt-0">
+            <div className="">{landingSection.title}</div>
+            <div className="text-4xl">{landingSection.description}</div>
             <div className="flex p-5 justify-evenly">
               {LandingData.map((nft, index) => {
                 return (
                   <VideoThumbnailSection
                     key={index}
                     title={nft.title}
+                    thumbnail={nft.thumbnail}
                     setNFT={setNFTCategory}
                   />
                 );
@@ -41,6 +42,8 @@ const Landing = () => {
           </div>
           <VideoCardSection
             title={NFTCategory}
+            type={filtered_NFT.type}
+            quantity={filtered_NFT.quantity}
             cartVideo={filtered_NFT.cartVideo}
           />
         </div>
