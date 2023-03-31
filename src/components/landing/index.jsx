@@ -12,21 +12,21 @@ const Landing = () => {
 
   return (
     <>
-      <div className="w-full items-center h-[80vh] relative overflow-hidden">
+      <div className="w-full h-screen items-center md:h-[80vh] relative overflow-hidden">
         <div className="relative h-[100%] top-0">
           <video
             src={filtered_NFT.backgroundVideo}
             autoPlay
             loop
             muted
-            className="object-cover videoClass absolute w-full opacity-70"
+            className="object-cover h-screen videoClass absolute w-full opacity-70"
           ></video>
         </div>
         <div className="extraDiv"></div>
         <div className="flex justify-evenly items-center absolute w-full h-full top-0 flex-col md:flex-row">
           <div className="flex flex-col text-white mt-[20%] md:mt-0">
-            <div className="">{landingSection.title}</div>
-            <div className="text-4xl">{landingSection.description}</div>
+            <div className="flex justify-center md:justify-start">{landingSection.title}</div>
+            <div className="flex justify-center text-xl md:text-4xl">{landingSection.description}</div>
             <div className="flex p-5 justify-evenly">
               {LandingData.map((nft, index) => {
                 return (

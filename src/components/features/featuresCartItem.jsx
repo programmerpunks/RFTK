@@ -3,7 +3,7 @@ import React from "react";
 const FeactureCartItem = ({ heading, logo, quantity, title, video_link }) => {
   return (
     <>
-      <div className="flex p-4 m-2 bg-[#272733] flex-col rounded-2xl w-1/3 lg:w-1/5 xxl:w-1/4">
+      <div className="flex p-4 m-10 md:m-4 bg-[#272733] flex-col rounded-2xl w-1/1 sm:w-1/2 md:w-1/3 lg:w-1/5 xxl:w-1/4">
         <div className="flex w-full items-center pl-2">
           <div className="w-[24px] h-[24px]">
             <img src={logo} alt="/" className="rounded-full" />

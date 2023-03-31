@@ -5,7 +5,7 @@ import SinglePartner from "./SinglePartner";
 
 const Partner = () => {
   return (
-    <div className="flex flex-row justify-center mx-10 xl:mx-[10%] 2xl:mx-[15%] space-x-5">
+    <div className="flex flex-row justify-center mx-10 xl:mx-[10%] 2xl:mx-[15%] space-x-5" id="PARTNER">
       <div className="rounded-3xl hidden lg:block my-10 basis-1/2">
         <img
           className="rounded-3xl 2xl:justify-end lg:w-fit lg:h-[100%] "

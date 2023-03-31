@@ -6,7 +6,7 @@ import { TryDetails } from "../../content/Try";
 const Try = () => {
   return (
     <>
-      <div className="py-5 px-10 mx-[7%]">
+      <div className="py-5 px-10 mx-[7%]" id="FEATURE">
         <div className="text-white font-bold">
           <h1>TRY ON THEM</h1>
         </div>

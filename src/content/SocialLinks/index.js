@@ -5,19 +5,19 @@ export const socialLinks = [
     },
     {
       text: "Discord",
-      link: "https://www.instagram.com/",
+      link: "https://www.discord.com/",
     },
     {
       text: "Twitter",
-      link: "https://www.instagram.com/",
+      link: "https://www.twitter.com/",
     },
     {
       text: "Youtube",
-      link: "https://www.instagram.com/",
+      link: "https://www.youtube.com/",
     },
     {
       text: "Tiktok",
-      link: "https://www.instagram.com/",
+      link: "https://www.tiktok.com/",
     }
   ];
   

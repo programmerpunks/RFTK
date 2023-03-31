@@ -5,7 +5,7 @@ import { winner, WinnersDetails } from "../../content/Winner";
 
 const Winner = () => {
   return (
-    <div className="bg-[#272932] mx-[10%] md:flex py-10 px-10 rounded-xl bg-grid-img">
+    <div className="bg-[#272932] mx-[10%] md:flex py-10 px-10 rounded-xl bg-grid-img" id="WINNER">
       <div className="md:w-[40%]">
         <h1 className="text-2xl md:w-[80%] md:text-xl xl:text-2xl 2xl:text-3xl text-[#FFFFFF]">
           {winner.title}

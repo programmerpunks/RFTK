@@ -15,31 +15,39 @@ const Footer = () => {
             <FooterLinks />
           </div>
         </div>
-        <div className="hidden lg:block lg:w-2/7 lg:ml-[10%] lg:mt-5">
-          <div>
-            <ul className="space-y-2">
-              <li className="hover:border-b-2 border-gray-500">FAQ</li>
-              <li className="hover:border-b-2 border-gray-500">
-                Legal Overview
-              </li>
-              <li className="hover:border-b-2 border-gray-500">
-                Privacy Policy
-              </li>
-              <li className="hover:border-b-2 border-gray-500">
-                terms & Conditions
-              </li>
-              <li className="hover:border-b-2 border-gray-500">Press Info</li>
-            </ul>
-          </div>
+        <div className="hidden lg:block lg:w-2/7 lg:ml-[10%] lg:mt-5 space-y-2">
+          <a
+            href="#COLLECTION"
+            className="hover:border-b-2 flex border-gray-500"
+          >
+            Collections
+          </a>
+          <a href="#WINNER" className="hover:border-b-2 flex border-gray-500">
+            Winners
+          </a>
+          <a href="#FEATURE" className="hover:border-b-2 flex border-gray-500">
+            Features
+          </a>
+          <a href="#MINT" className="hover:border-b-2 flex border-gray-500">
+            MINT
+          </a>
+          <a href="#PARTNER" className="hover:border-b-2 flex border-gray-500">
+            Partners
+          </a>
         </div>
         <div className="hidden lg:block lg:w-2/7 lg:ml-[5%] lg:mt-5">
           <div>
             <ul className="space-y-2">
               {socialLinks.map((socLnk) => {
                 return (
-                  <li className="hover:border-b-2 cursor-pointer border-gray-500 ">
+                  <a
+                    href={socLnk.link}
+                    rel="noreferrer"
+                    target="_blank"
+                    className="flex hover:border-b-2 cursor-pointer border-gray-500 "
+                  >
                     {socLnk.text}
-                  </li>
+                  </a>
                 );
               })}
             </ul>

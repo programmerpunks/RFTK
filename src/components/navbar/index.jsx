@@ -5,9 +5,9 @@ const logo = require("../../images/navbar/logo.svg").default;
 
 function DropdownItem(props) {
   return (
-    <li className="dropdownItem flex justify-center text-sm text-[#FFFFFF] p-4 rounded-2xl hover:bg-[#5733F5]">
+    <a href="#COLLECTION" className="dropdownItem flex justify-center text-sm text-[#FFFFFF] p-4 rounded-2xl hover:bg-[#5733F5]">
       <p> {props.text} </p>
-    </li>
+    </a>
   );
 }
 
@@ -16,8 +16,8 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex w-full flex-wrap absolute z-10 top-0 px-5">
-        <div className="flex w-[10%]">
+      <div className="flex h-[10vh] w-full flex-wrap absolute z-10 top-0 px-5">
+        <div className="flex w-[30%] md:w-[10%]">
           <img src={logo} alt="/" />
         </div>
         <div
@@ -26,9 +26,9 @@ const Navbar = () => {
             setOpen(false);
           }}
         >
-          <div className="p-4">DROPS ARCHIVE</div>
+          <a href="#WINNER" className="hidden md:block p-4">JOIN</a>
           <div
-            className="p-4 flex"
+            className="p-4 hidden md:flex"
             onMouseOver={() => {
               setOpen(true);
             }}
@@ -46,16 +46,9 @@ const Navbar = () => {
               <DropdownItem text={"BYREDO"} />
               <DropdownItem text={"SPACE DRIP FORGING"} />
               <DropdownItem text={"MNLTH"} />
-              <DropdownItem text={"CLONE X"} />
-              <DropdownItem text={"PUNK PROJECT"} />
-              <DropdownItem text={"JEFF STAPLE"} />
-              <DropdownItem text={"FEWOCIOUS"} />
-              <DropdownItem text={"SPACE DRIP 1.2"} />
-              <DropdownItem text={"SPACE DRIP"} />
-              <DropdownItem text={"CREATORS"} />
             </ul>
           </div>
-          <div className="p-4">DROPS ARCHIVE</div>
+          <a href="#PARTNER" className="hidden md:block p-4">PARTNERS</a>
           <button className="flex p-3 px-6 bg-blue-700 rounded-full">
             SIGN IN
           </button>

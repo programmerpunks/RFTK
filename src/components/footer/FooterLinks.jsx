@@ -1,13 +1,13 @@
 import React from "react";
 
-import { FooterButtonsDetails } from "../../content/Footer/buttons";
+import { socialLinks } from "../../content/SocialLinks";
 import FooterBtn from "./FooterBtn";
 
 const FooterLinks = () => {
   return (
     <div className="flex flex-wrap gap-2 justify-center">
-      {FooterButtonsDetails.map((btn) => {
-        return <FooterBtn text={btn.text} link={btn.link} />;
+      {socialLinks.map((socLnk) => {
+        return <FooterBtn text={socLnk.text} link={socLnk.link} />;
       })}
     </div>
   );
