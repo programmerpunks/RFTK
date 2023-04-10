@@ -6,8 +6,8 @@ import FooterBtn from "./FooterBtn";
 const FooterLinks = () => {
   return (
     <div className="flex flex-wrap gap-2 justify-center">
-      {socialLinks.map((socLnk) => {
-        return <FooterBtn text={socLnk.text} link={socLnk.link} />;
+      {socialLinks.map((socLnk,index) => {
+        return <FooterBtn text={socLnk.text} key={index} link={socLnk.link} />;
       })}
     </div>
   );

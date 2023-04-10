@@ -20,8 +20,8 @@ const Partner = () => {
           </p>
         </div>
         <div className=" flex flex-wrap gap-2 justify-center mx-[5%] lg:mx-0 my-10">
-          {PartnerDetails.map((partner) => {
-            return <SinglePartner img={partner.img} />;
+          {PartnerDetails.map((partner,index) => {
+            return <SinglePartner key={index} img={partner.img} />;
           })}
         </div>
       </div>

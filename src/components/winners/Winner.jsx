@@ -5,7 +5,10 @@ import { winner, WinnersDetails } from "../../content/Winner";
 
 const Winner = () => {
   return (
-    <div className="bg-[#272932] mx-[10%] md:flex py-10 px-10 rounded-xl bg-grid-img" id="WINNER">
+    <div
+      className="bg-[#272932] mx-[10%] md:flex py-10 px-10 rounded-xl bg-grid-img"
+      id="WINNER"
+    >
       <div className="md:w-[40%]">
         <h1 className="text-2xl md:w-[80%] md:text-xl xl:text-2xl 2xl:text-3xl text-[#FFFFFF]">
           {winner.title}
@@ -15,16 +18,21 @@ const Winner = () => {
         </button>
       </div>
       <div className="md:w-64 my-10 flex justify-center ">
-        <img className="w-[60%] hover:scale-110 duration-1000 " src={winner.Image} alt="" />
+        <img
+          className="w-[60%] hover:scale-110 duration-1000 "
+          src={winner.Image}
+          alt=""
+        />
       </div>
       <div className="md:w-[40%]">
         <h1 className="text-xs lg:text-base font-bold text-[#FFFFFF]">
           {winner.challenger}
         </h1>
         <div>
-          {WinnersDetails.map((winner) => {
+          {WinnersDetails.map((winner,index) => {
             return (
               <WinnerCard
+                key={index}
                 position={winner.position}
                 img={winner.img}
                 name={winner.name}

@@ -12,9 +12,9 @@ const Try = () => {
         </div>
         <div className="overflow-x-auto">
           <div className="flex gap-5 py-5">
-            {TryDetails.map((item) => {
+            {TryDetails.map((item,index) => {
               return (
-                <TryCard heading={item.heading} img={item.img} vid={item.vid} />
+                <TryCard key={index} heading={item.heading} img={item.img} vid={item.vid} />
               );
             })}
           </div>

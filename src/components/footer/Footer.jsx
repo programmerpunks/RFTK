@@ -38,10 +38,11 @@ const Footer = () => {
         <div className="hidden lg:block lg:w-2/7 lg:ml-[5%] lg:mt-5">
           <div>
             <ul className="space-y-2">
-              {socialLinks.map((socLnk) => {
+              {socialLinks.map((socLnk,index) => {
                 return (
                   <a
                     href={socLnk.link}
+                    key={index}
                     rel="noreferrer"
                     target="_blank"
                     className="flex hover:border-b-2 cursor-pointer border-gray-500 "
